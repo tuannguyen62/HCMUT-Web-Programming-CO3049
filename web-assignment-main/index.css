@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --bk-dark: #00173d;
+}
+
+.bg-bk-dark {
+  background-color: var(--bk-dark);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.debug * {
+  outline: 1px solid red;
+}
+
+input.form-control:focus {
+  z-index: 999;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+  color-adjust: exact !important; /* Firefox 48 – 96 */
+  print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
+}
